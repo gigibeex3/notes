@@ -61,7 +61,7 @@ const App = () => {
 	};
 
 	return (
-		<div className={`${darkMode ? "bg-black" : "bg-secondary"}`}>
+		<div className={`${darkMode && "bg-black"}`}>
 			<div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 min-h-screen">
 				<Header handleToggleDarkMode={setDarkMode} />
 				<Search handleSearchNote={setSearchText} />
